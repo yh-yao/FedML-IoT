@@ -33,9 +33,6 @@ sudo mv _dl.cpython-37m-arm-linux-gnueabi.so _dl.so
 # install again, to make sure pytorch related packages are installed
 sudo apt install libopenblas-base libopenblas-dev libblas-dev m4 cmake cython python3-dev python3-yaml python3-setuptools python3-wheel python3-pillow python3-numpy
 
-# MPI
-conda install mpi4py
-
 # Install Wandb
 pip3 install --upgrade wandb
 
