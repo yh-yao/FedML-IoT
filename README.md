@@ -29,7 +29,7 @@ The following commands are running on Raspberry Pi 4
 ```
 cd /home/pi
 mkdir sourcecode
-git clone https://github.com/FedML-AI/FedML.git
+git clone https://github.com/FedML-AI/FedML-IoT.git
 cd FedML/fedml_iot
 ```
 After the above commands, please follow the script `install-arm.sh`.
@@ -61,6 +61,7 @@ cd ../../../
 
 After the clone of this repository, please run the following command to get `FedML` submodule to your local.
 ```
+git submodule add https://github.com/FedML-AI/FedML
 cd FedML
 git submodule init
 git submodule update
