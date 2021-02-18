@@ -73,8 +73,8 @@ Our log tracking platform is wandb.com. Please register your own ID and login as
 wandb login ee0b5f53d949c84cee7decbe7a629e63fb2f8408
 ```
 
-# Launch FedML-Mobile Server
-FedML-IoT reuses the FedML-Mobile server code. So you can launch the server according to the guidance at `fedml_mobile/server/executor`.
+# Launch FedML-Server Server
+FedML-IoT reuses the FedML-Server server code. So you can launch the server according to the guidance at `fedml_server/executor`.
 Please change the IP address of the server. Here, we assume the server IP is `127.0.0.1`.
 ```
 python app.py
