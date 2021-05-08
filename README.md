@@ -29,7 +29,8 @@ The following commands are running on Raspberry Pi 4
 ```
 cd /home/pi
 mkdir sourcecode
-git clone https://github.com/FedML-AI/FedML-IoT.git
+#git clone https://github.com/FedML-AI/FedML-IoT.git
+git clone https://github.com/yh-yao/FedML-IoT.git
 cd FedML/fedml_iot
 ```
 After the above commands, please follow the script `install-arm.sh`.
