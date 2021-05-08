@@ -176,7 +176,7 @@ if __name__ == '__main__':
     model_trainer.set_id(client_index)
 
     # start training
-    trainer = FedAVGTrainer(client_index, train_data_local_dict, train_data_local_num_dict, train_data_num, device,
+    trainer = FedAVGTrainer(client_index, train_data_local_dict, train_data_local_num_dict, test_data_local_dict, train_data_num, device,
                             args, model_trainer)
 
     size = args.client_num_per_round + 1
