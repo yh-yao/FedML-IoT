@@ -72,7 +72,8 @@ git submodule update
 # Log Tracking
 Our log tracking platform is wandb.com. Please register your own ID and login as follows.
 ```
-wandb login ee0b5f53d949c84cee7decbe7a629e63fb2f8408
+wandb login 007a501d8a32ad2a5701928e6789e271e9d6025c
+#wandb login ee0b5f53d949c84cee7decbe7a629e63fb2f8408
 ```
 
 # Launch FedML-Server Server
