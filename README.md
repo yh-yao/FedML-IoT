@@ -62,7 +62,8 @@ cd ../../../
 
 After the clone of this repository, please run the following command to get `FedML` submodule to your local.
 ```
-git submodule add https://github.com/FedML-AI/FedML
+git submodule add https://github.com/yh-yao/FedML
+#git submodule add https://github.com/FedML-AI/FedML
 cd FedML
 git submodule init
 git submodule update
