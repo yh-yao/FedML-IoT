@@ -8,6 +8,8 @@ import numpy as np
 import requests
 import torch
 
+import wandb
+
 sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), "../../")))
 from FedML.fedml_api.distributed.fedavg.MyModelTrainer import MyModelTrainer
 from FedML.fedml_api.distributed.fedavg.FedAVGTrainer import FedAVGTrainer
@@ -156,6 +158,17 @@ if __name__ == '__main__':
     logging.info("model = " + str(args.model))
     logging.info("client_num_per_round = " + str(args.client_num_per_round))
     client_index = client_ID - 1
+    
+    
+    wandb.init(
+        # project="federated_nas",
+        project="fedml",
+        name="mobile(mqtt)" + str(args.partition_method) + "r" + str(args.comm_round) + "-e" + str(
+            args.epochs) + "-lr" + str(
+            args.lr) + "-time" + str(time.time() + "-client" + str(client_ID)),
+        config=args
+    )
+    
 
     # Set the random seed. The np.random seed determines the dataset partition.
     # The torch_manual_seed determines the initial weight.
