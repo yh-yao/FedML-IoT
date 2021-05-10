@@ -165,7 +165,7 @@ if __name__ == '__main__':
         project="fedml",
         name="mobile(mqtt)" + str(args.partition_method) + "r" + str(args.comm_round) + "-e" + str(
             args.epochs) + "-lr" + str(
-            args.lr) + "-time" + str(time.time() + "-client" + str(client_ID)),
+            args.lr) + "-time" + str(time.time()) + "-client" + str(client_ID),
         config=args
     )
     
