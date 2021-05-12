@@ -67,6 +67,8 @@ def register(args, uuid):
             self.batch_size = training_task_args['batch_size']
             self.frequency_of_the_test = training_task_args['frequency_of_the_test']
             self.is_mobile = training_task_args['is_mobile']
+            self.mu = training_task_args['mu']
+            
             
             
 
