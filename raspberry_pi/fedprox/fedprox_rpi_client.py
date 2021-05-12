@@ -199,6 +199,7 @@ if __name__ == '__main__':
     # start training
     trainer = FedProxTrainer(client_index, train_data_local_dict, train_data_local_num_dict, test_data_local_dict, train_data_num, device,
                              args, model_trainer)
+    
 
     size = args.client_num_per_round + 1
     client_manager = FedProxClientManager(args, trainer, rank=client_ID, size=size, backend="MQTT")
